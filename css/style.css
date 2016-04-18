@@ -41,7 +41,6 @@ section#skill {
 	padding: 2em 0 0 0;
 }
 
-
 hr { margin-top: 3em; }
 
 hr.pretty {
@@ -77,7 +76,12 @@ hr.pretty {
 	font-weight: bold;
 	margin: 5px 1em;
 	color: #2C3E50; /* navy */
+	transition: all .5s;
 }
+
+.footer-nav a:hover,
+.main-nav a:hover,
+#back-to-top a:hover { color: #d24d57; }
 
 .main-nav a {
 	display: block;
@@ -94,9 +98,7 @@ hr.pretty {
 .intro,
 .outro,
 .student-name,
-.photo {
-	padding: 1rem 1.5rem;
-}
+.photo { padding: 1rem 1.5rem; }
 
 .intro {
 	font-weight: 300;
