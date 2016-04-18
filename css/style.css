@@ -11,8 +11,8 @@ body {
 	height: 100%;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	background-color: #fafafa;
-	color: #333;
+	background-color: #ECF0F1;
+	color: #555;
 }
 
 /* ================================= 
@@ -25,6 +25,15 @@ body {
 	padding-top: 1.25rem;
 }
 
+/* for tablets */
+@media screen and (min-width: 768px) {
+	.wrapper { padding-top: 2.5rem; }
+}
+
+/* for desktops */
+@media screen and (min-width: 1024px) {
+	.wrapper { padding-top: 4rem; }
+}
 
 section#portfolio,
 section#contact,
@@ -33,16 +42,21 @@ section#skill {
 }
 
 
-hr {
-	margin-top: 3em;
+hr { margin-top: 3em; }
+
+hr.pretty {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 3px #d24d57; /* red */
+    text-align: center;
 }
 
-.section-title,
-.student-name,
-.footer-name {
-	color: #d24d57;
-}
+.footer-name,
+.student-name { color: #E74C3C; /* red */ }
 
+.section-title { color: #2980B9; /* blue */ }
 
 /* ================================= 
   Header & Nav stuff
@@ -62,7 +76,7 @@ hr {
 	text-transform: uppercase;
 	font-weight: bold;
 	margin: 5px 1em;
-	color: #A83E81;
+	color: #2C3E50; /* navy */
 }
 
 .main-nav a {
@@ -90,16 +104,12 @@ hr {
 	order: 1;
 }
 
-.outro {
-	margin: 0 auto;
-}
+.outro { margin: 0 auto; }
 
-.photo {
-	margin-top: 2rem;
-}
+.photo { margin-top: 2rem; }
 
 .photo img{
-	width: 100%;
+	max-width: 250px;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border:1px solid silver;
@@ -117,17 +127,11 @@ footer {
   	padding: 30px 0;
 }
 
-#back-to-top a {
-	display: inline-block;
-}
+#back-to-top a { display: inline-block; }
 
-.main-footer {
-	display: flex;
-}
+.main-footer { display: flex; }
 
-.footer-nav {
-	display: none;
-}
+.footer-nav { display: none; }
 
 .footer-name {
 	margin-right: auto;
@@ -139,27 +143,19 @@ footer {
   Portfolio Stuff
 ==================================== */
 
-.portfolio-item img {
-	width: 100%;
-	/*border: 1px solid #silver;*/
-	/*box-shadow: 0px 0px 30px gray;*/
-}
+.portfolio-item img { width: 100%; }
 
 .portfolio-item {
 	padding: 0 1rem;
 	margin: 1.5rem 0;
-	/*color: #222;*/
-	/*background-color: #fff;*/
 }
 
-ul.skills {
-  padding: 1rem;
-}
+ul.skills { padding: 1rem; }
 
 .skills li {
   border-radius: 7px;
   display: inline-block;
-  background: #4F9C94;
+  background: #3498DB;
   color: white;
   padding: 5px 10px;
   margin: 2px;
@@ -170,10 +166,6 @@ ul.skills {
 ==================================== */
 
 @media screen and (min-width: 768px) {
-
-	.wrapper {
-		padding-top: 2.5rem;
-	}
 
 	.flex-nav-container {
 		display: flex;
@@ -206,9 +198,7 @@ ul.skills {
 		background-color: transparent;
 	}
 
-	.portfolio-item {
-		width: 50%;
-	}
+	.portfolio-item { width: 50%; }
 
 	.photo {
 		order: 2;
@@ -226,25 +216,15 @@ ul.skills {
 		margin: 0 auto;
 	}
 
-	#back-to-top {
-		display: none;
-	}
+	#back-to-top { display: none; }
 
-	.footer-nav {
-		display: inline-block;
-	}
+	.footer-nav { display: inline-block; }
 
-	.footer-name {
-		padding: 0px 1.5rem;
-	}
+	.footer-name { padding: 0px 1.5rem; }
 	
 }
 
 @media screen and (min-width: 1024px) {
-
-	.wrapper {
-		padding-top: 4rem;
-	}
 
 	.flex-nav-container {
 		flex-direction: row;
@@ -256,17 +236,11 @@ ul.skills {
 		padding: 0 1.5rem;
 	}
 
-	.portfolio-item {
-		width: 33%;
-	}
+	.portfolio-item { width: 33%; }
 
-	.outro {
-		width: 50%;
-	}
+	.outro { width: 50%; }
 
-	.intro {
-		font-size: 1.5rem;
-	}
+	.intro { font-size: 1.5rem; }
 
 	
 }
